@@ -38,7 +38,7 @@
 //#include "file_stream.h"
 //using namespace std;   
 //  
-//////Ëã·¨   
+//////ï¿½ã·¨   
 ////int ldistance(const string source,const string target)   
 ////{   
 ////   //step 1   
@@ -91,7 +91,7 @@
 //    for(int i = 0; i < utf8Str.size(); ++ i)
 //    {
 //        char curByte = utf8Str.at(i); 
-//        ///U-00000000 â€šÃ?U-0000007F
+//        ///U-00000000 â€šï¿½?U-0000007F
 //        if( 0 == (curByte&0x80))
 //        {
 //            unicodeStr.push_back((wchar_t)curByte);
@@ -447,65 +447,65 @@
 //    Vehicle(int weight = 0)  
 //    {  
 //        Vehicle::weight = weight;  
-//        cout<<"ÔØÈëVehicleÀà¹¹Ôìº¯Êý"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½ï¿½Vehicleï¿½à¹¹ï¿½ìº¯ï¿½ï¿½"<<endl;  
 //    }  
 //    void SetWeight(int weight)  
 //    {  
-//        cout<<"ÖØÐÂÉèÖÃÖØÁ¿"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;  
 //        Vehicle::weight = weight;  
 //    }  
 //    virtual void ShowMe() = 0;  
 //protected:  
 //    int weight;  
 //};  
-//class Car:virtual public Vehicle//Æû³µ£¬ÕâÀïÊÇÐéÄâ¼Ì³Ð  
+//class Car:virtual public Vehicle//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½  
 //{  
 //public:  
 //    Car(int weight=0,int aird=0):Vehicle(weight)  
 //    {  
 //        Car::aird = aird;  
-//        cout<<"ÔØÈëCarÀà¹¹Ôìº¯Êý"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½ï¿½Carï¿½à¹¹ï¿½ìº¯ï¿½ï¿½"<<endl;  
 //    }  
 //    void ShowMe()  
 //    {  
-//        cout<<"ÎÒÊÇÆû³µ£¡"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;  
 //    }  
 //protected:  
 //    int aird;  
 //};  
 //
-//class Boat:virtual public Vehicle//´¬,ÕâÀïÊÇÐéÄâ¼Ì³Ð  
+//class Boat:virtual public Vehicle//ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½  
 //{  
 //public:  
 //    Boat(int weight=0,float tonnage=0):Vehicle(weight)  
 //    {  
 //        Boat::tonnage = tonnage;  
-//        cout<<"ÔØÈëBoatÀà¹¹Ôìº¯Êý"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½ï¿½Boatï¿½à¹¹ï¿½ìº¯ï¿½ï¿½"<<endl;  
 //    }  
 //    void ShowMe()  
 //    {  
-//        cout<<"ÎÒÊÇ´¬£¡"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½Ç´ï¿½ï¿½ï¿½"<<endl;  
 //    }  
 //protected:  
 //    float tonnage;  
 //};  
 //
-//class AmphibianCar:public Car,public Boat//Ë®Â½Á½ÓÃÆû³µ,¶àÖØ¼Ì³ÐµÄÌåÏÖ  
+//class AmphibianCar:public Car,public Boat//Ë®Â½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ø¼Ì³Ðµï¿½ï¿½ï¿½ï¿½ï¿½  
 //{  
 //public:  
 //    AmphibianCar(int weight,int aird,float tonnage)  
 //        :Vehicle(weight),Car(weight,aird),Boat(weight,tonnage)  
-//        //¶àÖØ¼Ì³ÐÒª×¢Òâµ÷ÓÃ»ùÀà¹¹Ôìº¯Êý  
+//        //ï¿½ï¿½ï¿½Ø¼Ì³ï¿½Òª×¢ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½à¹¹ï¿½ìº¯ï¿½ï¿½  
 //    {  
-//        cout<<"ÔØÈëAmphibianCarÀà¹¹Ôìº¯Êý"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½ï¿½AmphibianCarï¿½à¹¹ï¿½ìº¯ï¿½ï¿½"<<endl;  
 //    }  
 //    void ShowMe()  
 //    {  
-//        cout<<"ÎÒÊÇË®Â½Á½ÓÃÆû³µ£¡"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½ï¿½Ë®Â½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<endl;  
 //    }  
 //    void ShowMembers()  
 //    {  
-//        cout<<"ÖØÁ¿£º"<<weight<<"¶Ù£¬"<<"¿ÕÆøÅÅÁ¿£º"<<aird<<"CC£¬"<<"ÅÅË®Á¿£º"<<tonnage<<"¶Ù"<<endl;  
+//        cout<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<weight<<"ï¿½Ù£ï¿½"<<"ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"<<aird<<"CCï¿½ï¿½"<<"ï¿½ï¿½Ë®ï¿½ï¿½ï¿½ï¿½"<<tonnage<<"ï¿½ï¿½"<<endl;  
 //    }  
 //};  
 //int main()  
@@ -517,6 +517,7 @@
 //    a.ShowMembers();  
 //    system("pause");   
 //}
+//log
 #include <vector>
 #include <iostream>
 #include <algorithm>
